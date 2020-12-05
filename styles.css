@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "circular";
+    src: url("circular/circular-medium.otf")
+  }
+
+@font-face {
+    font-family: "circular-black";
+    src: url("circular/circular-black.otf")
+  }
+  
+@font-face {
+    font-family: "circular-book";
+    src: url("circular/circular-book.otf")
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212 ;
+    color: #ffffff;
+    display: flex;
+    height: 500px;
+    font-family: "circular";
+
+}
+
+aside {
+    background-color: black;
+    width: 250px;
+    height: 100vh;
+    left: 0;
+}
+
+aside img {
+    width: 120px;
+    margin: 15px ;
+}
+
+aside .btns button {
+    font-family: "circular";
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    background-color: black;
+    border: none;
+    color: #b3b3bb;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+aside .btns button:first-child {
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    background-color: #282828;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+
+}
+
+aside .btns button:hover{
+    cursor: pointer;
+    background-color: #282828;
+    color: #ffffff;
+
+}
+
+aside .playlist {
+    margin-left: calc(5% + 10px);
+    display: flex;
+    align-items: center;
+    color: #b3b3bb;
+
+    
+}
+
+aside .playlist p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+aside .playlist button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 30px;
+    background-color: #b3b3bb;
+
+}
+
+
+
+aside .playlist a{
+    color: #b3b3bb;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+
+aside .linha{
+    width: calc(90% - 20px);
+    margin-top: 20px;
+    margin-left: calc(5% + 10px);
+    border-top: 1px solid #3b3b3b;
+    height: 1px;
+    
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100vw - 250px);
+
+    padding-top: 15px;
+}
+
+.menu .btns-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu .btns-menu svg {
+    margin: 0 15px;
+
+}
+
+
+.menu .btns-menu button {
+    border: 1px solid #ffffff;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 30px;
+    font-family: "circular-black";
+    font-family: 400;
+    letter-spacing: 3px;
+    font-size: 12px;
+
+}
+
+.menu .login {
+    margin-right: 10px;
+}
+
+.icon-menu {
+    margin-right: 50px;
+}
+
+.musicas {
+    max-width: calc(100vw - 150px);
+    padding-left: 20px;
+}
+
+.musicas  h2{
+    margin-top: 30px;
+}
+
+.musicas  p{
+    color: #b3b3bb;
+    margin-top: 5px;
+    font-family: "circular-book";
+    font-size: 14px;
+}
+
+.musicas .musicas-row {
+    display: flex;
+}
+
+.musicas .musica-card {
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: #1d1d1d;
+    width: 190px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.musicas .musica-card .banner {
+    border-radius: 5px;
+    background-image: url("images/capa.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 170px;
+}
+
+.musicas .musica-card .decricao {
+    margin-top: 10px;
+}
+
+.musicas .decricao h5{
+    font-size: 18px;
+    font-family: "circular-black";
+}
+
+.musicas .decricao h6{
+    font-size: 14px;
+    font-family: "circular-book";
+    color: #b3b3b3;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #282828;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    height: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns-player  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns-player img {
+    width:   13px;
+    margin: 0 15px;
+}
+
+.btns-player img:hover {
+    cursor: pointer;
+}
+
+.btns-player .play {
+    width: px;
+}
+
+.progress-player {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b3b3bb;
+    font-size: 10px;
+}
+
+.progress-player .progress-bar{
+    margin: 0 20px;
+   width: 600px;
+   border-top: 4px solid #414141;
+}
