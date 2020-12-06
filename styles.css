@@ -294,19 +294,19 @@ main {
 .musicas .musica-card .play-banner {
     width: 40px;
     position: absolute;
-    opacity: 0%;
-
+    display: none;
     animation-duration: 0.5s;
 
 }
 
 @keyframes example {
-  0%   { right: 8px; bottom: -20px;}
+  0%   { right: 8px; bottom: -20px; opacity: 0%;}
   100% {right: 8px; bottom: 8px; opacity: 100%;}
 
 }
 
 .musicas .musica-card:hover .play-banner {
+    display: initial;
     animation-name: example;
     right: 8px;
     bottom: 8px;
