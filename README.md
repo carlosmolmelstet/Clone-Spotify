@@ -1,3 +1,3 @@
-# Clone-Site_Tesla
+# Spotify Clone
  
 [Deploy](https://carlosmolmelstet.github.io/spotify/)
